@@ -1,16 +1,64 @@
-# React + Vite
+## React Social App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern social media application built with React, featuring dynamic feeds, user profiles, interactive posts, and a responsive interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- **Responsive UI:** Works smoothly across desktop and mobile.
+- **Dynamic Feed:** Realistic social feed with posts and interactions.
+- **User Profiles:** Profile page layout with user info and posts.
+- **Reusable Components:** Sidebar, topbar, feed, share, post, rightbar, and more.
+- **Dummy Data:** Starter data to simulate users and posts.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
+```
+react-social-app/
+   src/
+    ├── assets/ # Images & icons
+    ├── components/ # Reusable UI components
+    │ ├── closeFriend/
+    │ ├── feed/
+    │ ├── online/
+    │ ├── post/
+    │ ├── rightbar/
+    │ ├── share/
+    │ ├── sidebar/
+    │ └── topbar/
+    ├── pages/ # Page views
+    │ ├── home/
+    │ ├── login/
+    │ ├── profile/
+    │ └── register/
+    ├── dummyData.js # Starter data
+    ├── main.jsx # App entry point
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📌 Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Adarshtechy/react-social-app.git
+```
+2. Install dependencies:
+```
+npm install 
+npm install @mui/material @emotion/react @emotion/styled
+npm install @mui/icons-material
+npm install react-router-dom
+```
+3. Start the development server:
+```
+npm run dev
+```
+
+
+
+├── App.jsx # Root component
+└── style.css # Global styles
