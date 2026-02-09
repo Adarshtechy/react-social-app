@@ -1,0 +1,92 @@
+/* Online Friend List Item */
+
+.rightbarFriend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+/* Hover effect (desktop) */
+.rightbarFriend:hover {
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+
+/* Profile image container */
+.rightbarProfileImgContainer {
+  position: relative;
+}
+
+/* Profile image */
+.rightbarProfileImg {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Online dot */
+.rightbarOnline {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: limegreen;
+  position: absolute;
+  top: -2px;
+  right: 0;
+  border: 2px solid white;
+}
+
+/* Username */
+.rightbarUsername {
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+}
+
+/* Tablet Responsive */
+
+@media (max-width: 992px) {
+  .rightbarProfileImg {
+    width: 38px;
+    height: 38px;
+  }
+
+  .rightbarUsername {
+    font-size: 14px;
+  }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  .rightbarFriend {
+    padding: 6px 8px;
+    margin-bottom: 10px;
+  }
+
+  .rightbarProfileImg {
+    width: 34px;
+    height: 34px;
+  }
+
+  .rightbarOnline {
+    width: 10px;
+    height: 10px;
+  }
+
+  .rightbarUsername {
+    font-size: 13px;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .rightbarUsername {
+    display: none; /* Only show image on very small screens */
+  }
+}

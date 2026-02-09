@@ -1,0 +1,164 @@
+.rightbar {
+  flex: 3.5;
+  width: 100%;
+}
+
+.rightbarWrapper {
+  padding: 20px 20px 0 0;
+}
+
+/* Birthday Section */
+
+.birthdayContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.birthdayImg {
+  width: 40px;
+  height: 40px;
+}
+
+.birthdayText {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* Ad Image */
+
+.rightbarAd {
+  width: 100%;
+  border-radius: 12px;
+  margin: 25px 0;
+  object-fit: cover;
+}
+
+/* Titles */
+
+.rightbarTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Friend List */
+
+.rightbarFriendList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Profile Info */
+
+.rightbarInfo {
+  margin-bottom: 25px;
+}
+
+.rightbarInfoItem {
+  margin-bottom: 10px;
+}
+
+.rightbarInfoKey {
+  font-weight: 600;
+  margin-right: 12px;
+  color: #555;
+}
+
+.rightbarInfoValue {
+  font-weight: 300;
+  color: #222;
+}
+
+/* Followings Grid */
+
+.rightbarFollowings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.rightbarFollowing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rightbarFollowingImg {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.rightbarFollowingName {
+  font-size: 13px;
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* Tablet Responsive */
+
+@media (max-width: 992px) {
+  .rightbarWrapper {
+    padding: 15px;
+  }
+
+  .rightbarFollowings {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rightbarFollowingImg {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  .rightbar {
+    flex: 1;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .rightbarWrapper {
+    padding: 10px;
+  }
+
+  .birthdayText {
+    font-size: 13px;
+  }
+
+  .rightbarTitle {
+    font-size: 16px;
+  }
+
+  .rightbarFollowings {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .rightbarFollowingImg {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Extra Small Screens */
+
+@media (max-width: 480px) {
+  .rightbarFollowings {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .rightbarFollowingImg {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+  }
+}

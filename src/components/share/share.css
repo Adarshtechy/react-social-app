@@ -1,0 +1,141 @@
+.share {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.4);
+  background: white;
+}
+
+/* Wrapper */
+.shareWrapper {
+  padding: 15px;
+}
+
+/* Top Section */
+
+.shareTop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.shareProfileImg {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Input */
+.shareInput {
+  border: none;
+  width: 100%;
+  font-size: 15px;
+}
+
+.shareInput:focus {
+  outline: none;
+}
+
+/* Divider */
+.shareHr {
+  margin: 15px 0;
+}
+
+/* Bottom Section */
+
+.shareBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /
+  gap: 10px;
+}
+
+/* Options */
+.shareOptions {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 12px;
+}
+
+.shareOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.shareIcon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.shareOptionText {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Button */
+.shareButton {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background-color: green;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.shareButton:hover {
+  opacity: 0.85;
+}
+
+/* Tablet Responsive */
+
+@media (max-width: 992px) {
+  .shareWrapper {
+    padding: 12px;
+  }
+
+  .shareOptionText {
+    font-size: 13px;
+  }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  .shareProfileImg {
+    width: 38px;
+    height: 38px;
+  }
+
+  .shareInput {
+    font-size: 14px;
+  }
+
+  .shareOptions {
+    gap: 8px;
+  }
+
+  .shareOptionText {
+    display: none; 
+  }
+
+  .shareButton {
+    width: 100%; 
+    text-align: center;
+  }
+}
+
+/* Extra Small Screens */
+
+@media (max-width: 480px) {
+  .shareWrapper {
+    padding: 10px;
+  }
+
+  .shareIcon {
+    font-size: 18px;
+  }
+}

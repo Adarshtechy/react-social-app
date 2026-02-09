@@ -1,0 +1,63 @@
+.sidebarFriend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+/* Hover effect for desktop */
+.sidebarFriend:hover {
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+
+.sidebarFriendImg {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Username text */
+.sidebarFriendName {
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .sidebarFriend {
+    padding: 6px 8px;
+    gap: 8px;
+  }
+
+  .sidebarFriendImg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .sidebarFriendName {
+    font-size: 13px;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .sidebarFriend {
+    flex-direction: row;
+    padding: 5px;
+  }
+
+  .sidebarFriendImg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .sidebarFriendName {
+    font-size: 12px;
+  }
+}

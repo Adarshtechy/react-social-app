@@ -1,0 +1,164 @@
+.post {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.4);
+  margin: 25px 0;
+  background: white;
+}
+
+.postWrapper {
+  padding: 15px;
+}
+
+/* Top Section */
+
+.postTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postTopLeft {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.postProfileImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.postUsername {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.postDate {
+  font-size: 12px;
+  color: gray;
+}
+
+/* Center Section */
+
+.postCenter {
+  margin: 15px 0;
+}
+
+.postText {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.postImg {
+  margin-top: 15px;
+  width: 100%;
+  max-height: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Bottom Section */
+
+.postBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.postBottomLeft {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.likeIcon {
+  width: 22px;
+  height: 22px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.postLikeCounter {
+  font-size: 14px;
+}
+
+.postBottomRight {
+  font-size: 14px;
+}
+
+.postCommentText {
+  cursor: pointer;
+  border-bottom: 1px dashed gray;
+  font-size: 14px;
+}
+
+/* Tablet Responsive */
+
+@media (max-width: 992px) {
+  .postWrapper {
+    padding: 12px;
+  }
+
+  .postImg {
+    max-height: 350px;
+  }
+
+  .postUsername {
+    font-size: 14px;
+  }
+}
+
+/*  Mobile Responsive */
+
+@media (max-width: 768px) {
+  .postWrapper {
+    padding: 10px;
+  }
+
+  .postProfileImg {
+    width: 34px;
+    height: 34px;
+  }
+
+  .postUsername {
+    font-size: 13px;
+    margin: 0 6px;
+  }
+
+  .postText {
+    font-size: 14px;
+  }
+
+  .postImg {
+    max-height: 280px;
+  }
+
+  .likeIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .postLikeCounter,
+  .postCommentText {
+    font-size: 13px;
+  }
+}
+
+/* Extra Small Devices */
+
+@media (max-width: 480px) {
+  .postBottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .postCommentText {
+    border: none;
+  }
+}
